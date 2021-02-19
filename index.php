@@ -1,5 +1,8 @@
+<h1>Recharge Card Generator</h1>
+
 <?php
 	
+
 	// first generate a random number given recharge card length
 	function genRandomNumber($length = 15) {
 	    $nums = '0123456789';
@@ -18,15 +21,15 @@
 	function generateRechargeCards($total, $length){
 		// get the first number
 		$card = genRandomNumber($length);
-		echo $card;
-		echo '<br/>';
+		echo('1: ' . $card);
+		echo('<br/>');
 
-		for ($i = 1; $i < $total; $i++) {
+		for ($i = 2; $i <= $total; $i++) {
 			$card += 7;
-			echo($card);
+			echo("$i: " .$card);
 			echo '<br/>';
 		}
 	}
 
-	generateRechargeCards(5, 12);
+	generateRechargeCards(200, 12);
 
