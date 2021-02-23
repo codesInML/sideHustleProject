@@ -1,0 +1,2 @@
+What is the difference between session and cookies?
+The most basic difference between session and cookies is that cookies are used to store information on the client side machine, while session is used to store information on the client’s machine as well as on a server.
